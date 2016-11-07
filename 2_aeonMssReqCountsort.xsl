@@ -13,7 +13,7 @@
     <xsl:result-document method="xml" href="aeonMssReqCount.xml">
       <collections>
         <xsl:for-each select="interest">
-          <interest name="{@name}">
+          <interest name="{@name}" code="{@code}">
             <xsl:for-each-group select="item" group-by="location">
               <xsl:sort select="count(current-group())" data-type="number" order="descending"/>
               <record>

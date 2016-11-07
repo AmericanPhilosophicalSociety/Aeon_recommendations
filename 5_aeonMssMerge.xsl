@@ -17,7 +17,7 @@
           <xsl:variable name="name_variable">
             <xsl:value-of select="@name"/>
           </xsl:variable>
-          <interest name="{@name}">
+          <interest name="{@name}" code="{@code}">
             <xsl:for-each select="record">
               <record>
                 <collection>
